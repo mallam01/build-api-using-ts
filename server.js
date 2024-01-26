@@ -79,7 +79,7 @@ app.delete('/products/:id', async(req, res) => {
  * Run the app server on PORT 3000
  */
 mongoose
-.connect('mongodb+srv://admin:admin87654321@mongodbcluster.diz3oox.mongodb.net/Node-API?retryWrites=true&w=majority')
+.connect('mongodb+srv://<USER_NAME>:<PASSWORD>@mongodbcluster.diz3oox.mongodb.net/Node-API?retryWrites=true&w=majority')
 .then( ()=> {
 	console.log('conneced to MongoDB...');
 	app.listen(PORT, function (err) {
